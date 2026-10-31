@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Fruit &amp; Veggie Slash</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud" class="hidden">
+ <div class="pill"><div class="label">YOUR SCORE</div><div id="score">0</div><div id="best">BEST: 0</div></div>
+</div>
+<div id="combo"></div>
+<div id="hint" class="hidden">✦ SWIPE TO SLICE ✦</div>
+<button id="mute" title="Sound">🔊</button>
+<div id="tools">
+ <button class="tool" id="rot" title="Rotate screen">⟳</button>
+ <button class="tool" id="fs" title="Full screen">⤢</button>
+</div>
+<div id="toast"></div>
+<div id="splash"><div class="float" style="font-size:70px">🍉 🥕 🍍</div><div class="by">MADE BY <span>TEJAS</span></div><div class="bar"><i></i></div></div>
+
+<div class="screen" id="home">
+ <div class="float">🍍 🥕 🍉 🧅 🍋</div>
+ <div class="logo">FRUIT &amp; VEGGIE<br>SLASH</div>
+ <div class="subtitle">FRESH • JUICY • SLICE IT ALL</div>
+ <button id="play">▶ PLAY NOW</button>
+ <div class="info">🍎 Slice fruits to earn points<br>🥦 Slice vegetables for bonus points<br>💣 Never touch a bomb!<br>🎯 Missing an item costs 1 point<br>🔊 Turn your sound on!</div>
+</div>
+
+<div class="screen hidden" id="gameOver">
+ <h1>GAME OVER!</h1>
+ <div style="font-size:75px">💥</div>
+ <div class="final">YOUR SCORE: <b id="finalScore">0</b></div>
+ <div id="newBest"></div>
+ <div id="finalBest"></div>
+ <button id="restart" style="margin-top:22px">↻ PLAY AGAIN</button>
+ <button id="homeBtn">HOME</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
